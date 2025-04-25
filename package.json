@@ -12,8 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/Elise0n/JuegoBanderas.git"
   },
-  "keywords": ["quiz", "geography", "game", "neon", "countries", "flags"],
-  "author": "Eliseo",
+  "keywords": [
+    "quiz",
+    "geography",
+    "game",
+    "neon",
+    "countries",
+    "flags"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -22,6 +28,7 @@
   "homepage": "https://github.com/Elise0n/JuegoBanderas#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
     "express": "^4.18.2",
     "mongoose": "^7.5.0"
   },
