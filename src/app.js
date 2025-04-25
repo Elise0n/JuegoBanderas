@@ -1,8 +1,12 @@
+// Cargar variables de entorno
+require('dotenv').config();
+// Importar dependencias
 const express = require("express")
 const mongoose = require("mongoose")
 const path = require("path")
 const cors = require("cors")
 const routes = require("./routes")
+
 
 // Inicializar app
 const app = express()
@@ -27,7 +31,7 @@ mongoose
 app.use("/api", routes)
 
 // Ruta principal
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"))
 })
 
